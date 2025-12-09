@@ -8,3 +8,8 @@ export function cn(...inputs: ClassValue[]) {
 export function convertToPlanObject<T>(value: T): T {
   return JSON.parse(JSON.stringify(value));
 }
+
+export function formatNumberWithDecimal(value: number): string {
+  const [int, deci] = value.toString().split(".");
+  return deci ? `${int}.${deci.padEnd(2, "0")}` : `${int}.00`;
+}
