@@ -6,5 +6,6 @@ export const Env = {
     "NEXT_PUBLIC_APP_DESCRIPTION",
     "Best modern E-commerce clothes and shoes store"
   ),
-  SERVER_URL:getEnv("NEXT_PUBLIC_SERVER_URL","http://localhost:3000"),
+  SERVER_URL: getEnv("NEXT_PUBLIC_SERVER_URL", "http://localhost:3000"),
+  LATEST_PRODUCTS_LIMIT: getEnv("LATEST_PRODUCTS_LIMIT", "4"),
 };

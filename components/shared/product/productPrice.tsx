@@ -7,7 +7,7 @@ const ProductPrice = ({
   price: number;
   className?: string;
 }) => {
-  const stringValue = price.toFixed(2)
+  const stringValue = Number(price).toFixed(2)
   const [intValue, floatValue] = stringValue.split(".")
 
   return (
